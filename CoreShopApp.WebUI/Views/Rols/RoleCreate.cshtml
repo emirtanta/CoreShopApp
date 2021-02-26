@@ -1,0 +1,31 @@
+﻿@model RoleModel
+@{
+    ViewData["Title"] = "Rol Ekleme Formu";
+}
+
+<h1 class="text-center">@ViewBag.Title</h1>
+
+<div class="row">
+    <div class="col-md-8">
+        <form asp-controller="Rols" asp-action="RoleCreate" method="post">
+
+            <div asp-validation-summary="All" class="text-center"></div>
+
+            @* rol adı bölümü *@
+            <div class="form-group row">
+                <label asp-for="Name" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" asp-for="Name">
+                </div>
+            </div>
+
+            @* buton bölümü *@
+            <div class="form-group row">
+                <div class="col-sm-10 offset-sm-2">
+                    <button type="submit" class="btn btn-primary">Gönder</button>
+                    <a href="/Rols/RoleList" class="btn btn-danger">İptal</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

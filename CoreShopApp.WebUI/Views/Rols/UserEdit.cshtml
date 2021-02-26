@@ -1,0 +1,88 @@
+﻿@model CoreShopApp.WebUI.Models.UserDetailsModel
+@{
+    ViewData["Title"] = $"{Model.UserName}";
+}
+
+<h1 class="text-center">@ViewBag.Title</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <form asp-controller="Rols" asp-action="UserEdit" method="post">
+
+            <div class="row">
+                <div class="col-md-8">
+
+                    <input type="hidden" name="UserId" value="@Model.UserId">
+
+                    @* ad bölümü *@
+                    <div class="form-group row">
+                        <label asp-for="FirstName" class="col-md-2 col-form-label"></label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" asp-for="FirstName">
+                            <span asp-validation-for="FirstName" class="text-center"></span>
+                        </div>
+                    </div>
+
+                    @* soyad bölümü *@
+                    <div class="form-group row">
+                        <label asp-for="LastName" class="col-sm-2 col-form-label"></label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" asp-for="LastName">
+                            <span asp-validation-for="LastName" class="text-center"></span>
+                        </div>
+                    </div>
+
+                    @* kullanıcı adı bölümü *@
+                    <div class="form-group row">
+                        <label asp-for="UserName" class="col-sm-2 col-form-label"></label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" asp-for="UserName">
+                            <span asp-validation-for="UserName" class="text-center"></span>
+                        </div>
+                    </div>
+
+                    @* email bölümü *@
+                    <div class="form-group row">
+                        <label asp-for="Email" class="col-sm-2 col-form-label"></label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" asp-for="Email">
+                            <span asp-validation-for="Email" class="text-center"></span>
+                        </div>
+                    </div>
+
+                    @* buton bölümü *@
+                    <div class="form-group row">
+                        <div class="col-sm-10 offset-sm-2 text-center">
+                            <button type="submit" class="btn btn-primary">Gönder</button>
+                            <a href="/Rols/RoleList" class="btn btn-danger">İptal</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                @* viewbag üzerinden tüm roller getirildi *@
+                <div class="col-md-4">
+                    @foreach (var rolename in ViewBag.Roles)
+                    {
+                        <div class="custom-control custom-checkbox">
+                            @* iligli kategoriye ait ürün seçili olarak getirilir *@
+                            <input type="checkbox" name="selectedRoles" value="@rolename" class="custom-control-input" id="@rolename" @(Model.SelectedRoles.Any(i => i == rolename) ? "checked" : "")>
+                            <label class="custom-control-label" for="@rolename">@rolename</label>
+                        </div>
+                    }
+
+                    <hr />
+                    <div class="custom-control custom-checkbox">
+                        <input asp-for="EmailConfirmed" type="checkbox" class="custom-control-input" />
+                        <label asp-for="EmailConfirmed" type="checkbox" class="custom-control-label"></label>
+                    </div>
+
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+

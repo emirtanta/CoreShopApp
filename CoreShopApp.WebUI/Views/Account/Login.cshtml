@@ -1,0 +1,45 @@
+﻿@model CoreShopApp.WebUI.Models.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1 class="text-center">@ViewBag.Title</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-controller="Account" asp-action="Login" method="post">
+
+            <input type="hidden" name="ReturnUrl" value="@Model.ReturnUrl" />
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            @*<div class="form-group">
+            <label asp-for="Username" class="control-label"></label>
+            <input asp-for="Username" class="form-control" />
+            <span asp-validation-for="Username" class="text-danger"></span>
+        </div>*@
+
+            @* email bölümü *@
+            <div class="form-group">
+                <label asp-for="EMail" class="control-label"></label>
+                <input asp-for="EMail" class="form-control" />
+                <span asp-validation-for="EMail" class="text-danger"></span>
+            </div>
+
+            @* şifre bölümü *@
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+
+            @* buton bölümü *@
+            <div class="form-group">
+                <input type="submit" value="Login" class="btn btn-primary" />
+                <a href="/Account/Register" class="btn btn-danger">Üye Değil misin?</a>
+                <a href="/Account/ForgotPassword" class="btn btn-danger">Şifremi unuttum</a>
+            </div>
+        </form>
+    </div>
+</div>
+

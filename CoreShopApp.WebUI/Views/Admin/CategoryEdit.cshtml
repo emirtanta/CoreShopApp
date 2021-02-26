@@ -1,0 +1,72 @@
+﻿@model CategoryModel
+
+@{
+    ViewData["Title"] = "Kategori Düzenleme Formu";
+}
+
+<h1 class="text-center">@ViewBag.Title</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <div class="col-md-8">
+            <div class="row">
+                <table class="table table-bordered table-sm">
+                    <thead>
+                        <tr>
+                            <td>Id</td>
+                            <td>Resim</td>
+                            <td>Ürün Adı</td>
+                            <td>Fiyat</td>
+                            <td>Onay</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.Products.Count > 0)
+                        {
+                            @foreach (var item in Model.Products)
+                            {
+                                <tr>
+                                    <td>@item.ProductId</td>
+                                    <td>
+                                        <img src="~/img/@item.ImageUrl">
+                                    </td>
+                                    <td>@item.Name</td>
+                                    <td>@item.Price</td>
+                                    <td>
+                                        @if (item.IsApproved)
+                                        {
+                                            <i class="fas fa-check-circle"> </i>
+
+                                        }
+                                        else
+                                        {
+                                            <i class="fas fa-times-circle"></i>
+                                        }
+                                    </td>
+                                    <td>
+                                        <a href="/Admin/Products/@item.ProductId" class="btn btn-primary btn-sm mr-2">Düzenle</a>
+
+                                        <form action="/Admin/deletefromcategory" method="POST" style="display: inline;">
+                                            <input type="hidden" name="productId" value="@item.ProductId">
+                                            @* kategoriden ürün silmek için tanımlandı *@
+                                            <input type="hidden" name="categoryId" value="@Model.CategoryId">
+                                            <button type="submit" class="btn btn-danger btn-sm">Sil</button>
+                                        </form>
+
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@*<div>
+    <a asp-action="Index">Back to List</a>
+</div>*@
+

@@ -1,0 +1,14 @@
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Business\obj\Debug\netcoreapp3.1\CoreShopApp.Business.csprojAssemblyReference.cache
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Business\obj\Debug\netcoreapp3.1\CoreShopApp.Business.AssemblyInfoInputs.cache
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Business\obj\Debug\netcoreapp3.1\CoreShopApp.Business.AssemblyInfo.cs
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Business\obj\Debug\netcoreapp3.1\CoreShopApp.Business.csproj.CoreCompileInputs.cache
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Business\bin\Debug\netcoreapp3.1\CoreShopApp.Business.deps.json
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Business\bin\Debug\netcoreapp3.1\CoreShopApp.Business.dll
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Business\bin\Debug\netcoreapp3.1\CoreShopApp.Business.pdb
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Business\bin\Debug\netcoreapp3.1\CoreShopApp.Data.dll
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Business\bin\Debug\netcoreapp3.1\CoreShopApp.Entity.dll
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Business\bin\Debug\netcoreapp3.1\CoreShopApp.Data.pdb
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Business\bin\Debug\netcoreapp3.1\CoreShopApp.Entity.pdb
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Business\obj\Debug\netcoreapp3.1\CoreShopApp.Business.csproj.CopyComplete
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Business\obj\Debug\netcoreapp3.1\CoreShopApp.Business.dll
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Business\obj\Debug\netcoreapp3.1\CoreShopApp.Business.pdb

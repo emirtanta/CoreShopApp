@@ -1,0 +1,15 @@
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Data\obj\Debug\netcoreapp3.1\CoreShopApp.Data.csprojAssemblyReference.cache
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Data\obj\Debug\netcoreapp3.1\CoreShopApp.Data.AssemblyInfoInputs.cache
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Data\obj\Debug\netcoreapp3.1\CoreShopApp.Data.AssemblyInfo.cs
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Data\obj\Debug\netcoreapp3.1\CoreShopApp.Data.csproj.CoreCompileInputs.cache
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Data\bin\Debug\netcoreapp3.1\CoreShopApp.Data.deps.json
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Data\bin\Debug\netcoreapp3.1\CoreShopApp.Data.runtimeconfig.json
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Data\bin\Debug\netcoreapp3.1\CoreShopApp.Data.runtimeconfig.dev.json
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Data\bin\Debug\netcoreapp3.1\CoreShopApp.Data.dll
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Data\bin\Debug\netcoreapp3.1\CoreShopApp.Data.pdb
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Data\bin\Debug\netcoreapp3.1\CoreShopApp.Entity.dll
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Data\bin\Debug\netcoreapp3.1\CoreShopApp.Entity.pdb
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Data\obj\Debug\netcoreapp3.1\CoreShopApp.Data.csproj.CopyComplete
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Data\obj\Debug\netcoreapp3.1\CoreShopApp.Data.dll
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Data\obj\Debug\netcoreapp3.1\CoreShopApp.Data.pdb
+C:\Users\emirt\source\repos\CoreShopApp\CoreShopApp.Data\obj\Debug\netcoreapp3.1\CoreShopApp.Data.genruntimeconfig.cache
